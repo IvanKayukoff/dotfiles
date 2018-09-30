@@ -1,9 +1,13 @@
+syntax enable
+
 set tabstop=2       " The width of a TAB is set to 2
 set shiftwidth=2    " Indents will have a width of 2
 set softtabstop=2   " Sets the number of columns for a TAB
 set expandtab       " Expand TABs to spaces
 
-set nu
+set number
+set title
+set backspace=indent,eol,start
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
 
 " Specify a directory for plugins
