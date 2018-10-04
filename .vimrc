@@ -2,13 +2,15 @@ syntax enable
 
 set tabstop=2       " The width of a TAB is set to 2
 set shiftwidth=2    " Indents will have a width of 2
-set softtabstop=2   " Sets the number of columns for a TAB
+set softtabstop=2   " Set the number of columns for a TAB
 set expandtab       " Expand TABs to spaces
 
 set number
 set title
 set backspace=indent,eol,start
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
+
+set termguicolors   " Make vim colored (for vim 8+ only)
 
 " Automatic install the vim-plug if not installed
 if empty(glob('~/.vim/autoload/plug.vim'))
