@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rsync -acz --progress --exclude='.git/' --delete ~/{scripts,docs,books} asgard:~/google-drive/skynote_archive/current/ --backup --backup-dir=~/grive/skynote_archive/increment/`date +%Y-%m-%d`/
+rsync -acz --progress --exclude='.git/' --delete ~/{scripts,docs,books} asgard:~/google-drive/skynote_archive/current/ --backup --backup-dir=~/google-drive/skynote_archive/increment/`date +%Y-%m-%d`/
 
 echo "Starting grive2 on the asgard.."
 
