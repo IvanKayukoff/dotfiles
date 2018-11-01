@@ -1,3 +1,11 @@
+# NodeJS config
+export PATH=$PATH:/opt/node-v10.13.0-linux-x64/bin
+
+# Go config
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/code/go-toying
+export PATH=$PATH:$(go env GOPATH)/bin
+
 # Aliases
 alias gs="git status"
 alias ga="git add"
