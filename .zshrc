@@ -1,11 +1,3 @@
-# NodeJS config
-export PATH=$PATH:/opt/node-v10.13.0-linux-x64/bin
-
-# Go config
-export PATH=$PATH:/usr/local/go/bin
-export GOPATH=$HOME/code/go-toying
-export PATH=$PATH:$(go env GOPATH)/bin
-
 # Aliases
 alias gs="git status"
 alias ga="git add"
@@ -14,7 +6,7 @@ alias gd="git diff"
 alias gr="git reset"
 alias gds="git diff --staged"
 alias gc="git commit"
-alias gpm="git push origin master"
+alias gp="git push"
 
 bindkey -v
 export KEYTIMEOUT=1 # remove the delay after hitting ESC
@@ -26,7 +18,9 @@ function texwatch {
 }
 
 export ZSH=/home/sky/.oh-my-zsh
-ZSH_THEME="rkj"
+ZSH_THEME="robbyrussell"
+
+export PATH="$PATH:/home/sky/.local/bin"
 
 source $ZSH/oh-my-zsh.sh
 
