@@ -16,5 +16,9 @@ mkdir -p ~/.config
 mv ~/.config/i3 ~/.config/i3-old
 ln -s `pwd`/i3 ~/.config
 
+mkdir -p ~/.config
+mv ~/.config/i3status ~/.config/i3status-old
+ln -s `pwd`/i3status ~/.config
+
 sudo ln -s `pwd`/asgard_backup_push.sh /usr/local/bin/asgard_backup_push
 

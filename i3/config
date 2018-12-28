@@ -1,6 +1,7 @@
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 9
+#font pango:monospace 9
+font pango:DejaVu Sans Mono, FontAwesome 9
 
 set $mod Mod4
 set $sup Mod1
@@ -153,6 +154,10 @@ bindsym $mod+r mode "resize"
 bar {
     status_command i3status
     position top
+    font pango:DejaVu Sans Mono, FontAwesome 9
+    colors {
+        background #2c2f38
+    }
 }
 
 # swap caps lock and escape
@@ -193,4 +198,8 @@ gaps outer 8
 
 # use gaps if there is more than one container on the workspace
 smart_gaps on
+
+# open floating windows in the floating mode by default
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="task_dialog"] floating enable
 
