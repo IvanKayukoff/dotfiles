@@ -173,6 +173,9 @@ assign [title=".*IDEA.*"] "2: ide"
 exec_always --no-startup-id "setxkbmap -layout us,ru"
 exec_always --no-startup-id "setxkbmap -option 'grp:alt_shift_toggle'"
 
+# make terminator transparent
+exec_always --no-startup-id "compton &"
+
 # set a wallpaper
 exec ~/.fehbg &
 
