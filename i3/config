@@ -174,10 +174,10 @@ exec_always --no-startup-id "setxkbmap -layout us,ru"
 exec_always --no-startup-id "setxkbmap -option 'grp:alt_shift_toggle'"
 
 # make terminator transparent
-exec_always --no-startup-id "compton &"
+exec --no-startup-id "compton -b"
 
-# set a wallpaper
-exec ~/.fehbg &
+#run nm-applet
+exec nm-applet
 
 # enable mediakeys
 bindsym XF86AudioLowerVolume exec amixer set Master 2dB-
@@ -193,11 +193,11 @@ bindsym --release $mod+Mod2+KP_4 exec --no-startup-id "xdotool key --clearmodifi
 bindsym Ctrl+Shift+Print exec "maim -s --format=png /dev/stdout | xclip -selection clipboard -t image/png -i"
 
 # remove border for all windows (important for i3-gaps)
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 1
 
 # add gaps
-gaps inner 12
-gaps outer 8
+gaps inner 8
+gaps outer 6
 
 # use gaps if there is more than one container on the workspace
 smart_gaps on
@@ -205,4 +205,9 @@ smart_gaps on
 # open floating windows in the floating mode by default
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
+for_window [window_role="bubble"] floating enable
+for_window [window_role="Preferences"] floating enable
+for_window [window_type="dialog"] floating enable
+for_window [window_type="menu"] floating enable
+for_window [class="(?i)pavucontrol"] floating enable, move position mouse
 
