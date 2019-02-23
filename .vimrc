@@ -11,6 +11,7 @@ set backspace=indent,eol,start
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
 
 set termguicolors   " Makes vim colored (for Vim 8+)
+set clipboard=unnamedplus
 
 " Automatic install the vim-plug if not already installed
 if empty(glob('~/.vim/autoload/plug.vim'))

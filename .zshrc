@@ -17,6 +17,8 @@ function texwatch {
   done
 }
 
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+
 export ZSH=/home/sky/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
