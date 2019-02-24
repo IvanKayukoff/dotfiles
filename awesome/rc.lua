@@ -21,6 +21,8 @@ require("awful.hotkeys_popup.keys")
 local volume_control = require("widgets.volume-control")
 -- Brightness widget
 local brightness = require("widgets.brightness.init")
+-- Google music widget
+local gpmdp = require("widgets.gpmdp")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -64,6 +66,7 @@ editor_cmd = terminal .. " -e " .. editor
 -- Define volume and brightness control
 volumecfg = volume_control {device="pulse"}
 brightness_ctrl = brightness({})
+gpmdp_cfg = gpmdp({})
 
 modkey = "Mod4"
 
@@ -222,6 +225,10 @@ awful.screen.connect_for_each_screen(function(s)
       s.mytasklist, -- Middle widget
         { -- Right widgets
           layout = wibox.layout.fixed.horizontal,
+          sprtr,
+          sprtr,
+          gpmdp_cfg.widget,
+          sprtr,
           wibox.widget.systray(),
           mykeyboardlayout,
           sprtr,
@@ -498,7 +505,8 @@ awful.rules.rules = {
                    keys = clientkeys,
                    buttons = clientbuttons,
                    screen = awful.screen.preferred,
-                   placement = awful.placement.no_overlap+awful.placement.no_offscreen
+                   placement = awful.placement.no_overlap+awful.placement.no_offscreen,
+                   size_hints_honor = false
    }
  },
 

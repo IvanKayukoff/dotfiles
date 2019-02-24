@@ -245,8 +245,8 @@ function vwidget:show_menu()
 end
 
 function vwidget:update_widget(setting)
-    self.widget:set_markup(
-        self.widget_text[setting.state]:format(setting.volume))
+  self.widget:set_markup(
+  "<span color='LightBlue'>" .. self.widget_text[setting.state]:format(setting.volume) .. "</span>")
 end
 
 -- tooltip

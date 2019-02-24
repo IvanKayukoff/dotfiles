@@ -13,6 +13,10 @@ set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNO
 set termguicolors   " Makes vim colored (for Vim 8+)
 set clipboard=unnamedplus
 
+" Activate powerline-vim
+let g:powerline_pycmd="py3"
+let g:airline_powerline_fonts = 1
+
 " Automatic install the vim-plug if not already installed
 if empty(glob('~/.vim/autoload/plug.vim'))
     silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs

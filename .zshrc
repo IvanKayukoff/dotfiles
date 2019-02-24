@@ -17,6 +17,10 @@ function texwatch {
   done
 }
 
+# Activate powerline
+powerline-daemon -q
+. /usr/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 
 export ZSH=/home/sky/.oh-my-zsh
