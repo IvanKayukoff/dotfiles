@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # Enable tap to click
-xinput set-prop "ETPS/2 Elantech Touchpad" 286 1
+xinput set-prop "ETPS/2 Elantech Touchpad" 287 1
 
 # Enable natural scrolling
-xinput set-prop "ETPS/2 Elantech Touchpad" 294 1
+xinput set-prop "ETPS/2 Elantech Touchpad" 295 1
 
