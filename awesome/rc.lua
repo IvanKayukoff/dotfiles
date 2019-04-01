@@ -20,7 +20,7 @@ require("awful.hotkeys_popup.keys")
 -- Volume control widget
 local volume_control = require("widgets.volume-control")
 -- Brightness widget
-local brightness = require("widgets.brightness.init")
+local brightness = require("widgets.brightness")
 -- Google music widget
 local gpmdp = require("widgets.gpmdp")
 
@@ -236,7 +236,7 @@ awful.screen.connect_for_each_screen(function(s)
           sprtr,
           volumecfg.widget,
           sprtr,
-          require("widgets.battery") {},
+          require("widgets.battery-widget") {},
           sprtr,
           mytextclock,
           s.mylayoutbox,
@@ -256,6 +256,12 @@ root.buttons(gears.table.join(
 -- Keyboard layout setting
 awful.spawn.easy_async_with_shell("xxkb &")
 awful.spawn.easy_async_with_shell("setxkbmap -layout us,ru -variant -option grp:alt_shift_toggle, terminate:ctrl_alt_bksp &")
+
+-- Enable window transparency
+awful.spawn.easy_async("compton -b")
+
+-- Start NetworkManager applet
+awful.spawn.easy_async_with_shell("nm-applet")
 
 -- {{{ Key bindings
 globalkeys = gears.table.join(

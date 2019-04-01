@@ -17,16 +17,15 @@ function texwatch {
   done
 }
 
-# Activate powerline
-powerline-daemon -q
-. /usr/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
-
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 
 export ZSH=/home/sky/.oh-my-zsh
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 export PATH="$PATH:/home/sky/.local/bin"
 
 source $ZSH/oh-my-zsh.sh
+
+# remove username@hostname from the prompt (useful for agnoster theme)
+prompt_context() {  }
 

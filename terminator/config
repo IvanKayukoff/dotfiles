@@ -20,6 +20,7 @@
   [[default]]
     background_color = "#232420"
     background_darkness = 0.9
+    background_type = transparent
     cursor_color = "#aaaaaa"
     font = Ubuntu Mono 13
     foreground_color = "#e8e8e8"

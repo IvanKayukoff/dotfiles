@@ -9,9 +9,6 @@ ln -s `pwd`/.zshrc ~/.zshrc
 mv ~/.vimrc ~/.vimrc.old
 ln -s `pwd`/.vimrc ~/.vimrc
 
-# setting wallpaper
-feh --bg-scale PATH_TO_PICTURE
-
 mkdir -p ~/.config
 mv ~/.config/i3 ~/.config/i3-old
 ln -s `pwd`/i3 ~/.config
@@ -21,6 +18,9 @@ ln -s `pwd`/i3status ~/.config
 
 mv ~/.config/terminator ~/.config/terminator-old
 ln -s `pwd`/terminator ~/.config
+
+mv ~/.config/awesome ~/.config/awesome-old
+ln -s `pwd`/awesome ~/.config
 
 #sudo ln -s `pwd`/asgard_backup_push.sh /usr/local/bin/asgard_backup_push
 

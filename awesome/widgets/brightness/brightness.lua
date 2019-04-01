@@ -29,7 +29,9 @@ function control:init(args)
 
   self.widget:buttons(awful.util.table.join(
     awful.button({ }, 1, function() self:up() end),
-    awful.button({ }, 3, function() self:down() end)
+    awful.button({ }, 3, function() self:down() end),
+    awful.button({ }, 4, function() self:up() end),
+    awful.button({ }, 5, function() self:down() end)
   ))
 
   self:update_widget()
@@ -43,6 +45,10 @@ function control:get()
 end
 
 function control:update_widget()
+  if type(tonumber(self.cur_bright)) == "nil" then
+    self.cur_bright = 100
+    self.max_bright = 100
+  end
   local brightness = math.floor(
     0.5 + tonumber(self.cur_bright) / tonumber(self.max_bright) * 100
   )
