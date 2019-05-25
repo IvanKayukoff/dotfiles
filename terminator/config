@@ -1,6 +1,6 @@
 [global_config]
   borderless = True
-  inactive_color_offset = 0.858974358974
+  inactive_color_offset = 0.958333333333
   scroll_tabbar = True
   tab_position = hidden
   title_hide_sizetext = True
@@ -19,7 +19,7 @@
 [profiles]
   [[default]]
     background_color = "#232420"
-    background_darkness = 0.9
+    background_darkness = 0.95
     background_type = transparent
     cursor_color = "#aaaaaa"
     font = Ubuntu Mono 13
