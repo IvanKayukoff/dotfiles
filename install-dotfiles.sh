@@ -19,3 +19,6 @@ ln -s `pwd`/terminator ~/.config
 mv ~/.config/awesome ~/.config/awesome-old
 ln -s `pwd`/awesome ~/.config
 
+mv ~/.xprofile ~/.xprofile.old
+ln -s `pwd`/.xprofile ~/.xprofile
+

@@ -10,7 +10,6 @@ set title
 set backspace=indent,eol,start
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
 
-set termguicolors   " Makes vim colored (for Vim 8+)
 set clipboard=unnamedplus
 
 " Activate powerline-vim

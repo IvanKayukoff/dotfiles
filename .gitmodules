@@ -3,4 +3,4 @@
 	url = https://github.com/lcpz/lain
 [submodule "awesome/widgets/battery-widget"]
 	path = awesome/widgets/battery-widget
-	url = git@github.com:IvanKayukoff/battery-widget.git
+	url = https://github.com/IvanKayukoff/battery-widget

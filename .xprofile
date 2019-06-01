@@ -1,8 +1,12 @@
 #!/bin/sh
 
-# Enable tap to click
-xinput set-prop "ETPS/2 Elantech Touchpad" 287 1
+# Switch escape and capslock
+setxkbmap -option caps:swapescape
 
+# Enable tap to click
+xinput set-prop "ETPS/2 Elantech Touchpad" "libinput Tapping Enabled" 1
 # Enable natural scrolling
-xinput set-prop "ETPS/2 Elantech Touchpad" 295 1
+xinput set-prop "ETPS/2 Elantech Touchpad" "libinput Natural Scrolling Enabled" 1
+# Don't disable touchpad while typing
+xinput set-prop "ETPS/2 Elantech Touchpad" "libinput Disable While Typing Enabled" 0
 

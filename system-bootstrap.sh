@@ -12,7 +12,7 @@ echo "Type \"yes\" if you've already done that:"
 
 sudo pacman --noconfirm -Syu
 sudo pacman --noconfirm -S alsa-utils pulseaudio pavucontrol
-sudo pacman --noconfirm -S xorg-server xorg-xinit mesa
+sudo pacman --noconfirm -S xorg-server xorg-xinit mesa xorg-xinput
 
 sudo pacman --noconfirm -S vim htop git wget curl zsh make cmake terminator openssh networkmanager network-manager-applet
 sudo systemctl enable NetworkManager
