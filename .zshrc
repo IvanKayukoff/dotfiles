@@ -22,10 +22,10 @@ function texwatch {
 
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 
-export ZSH=/home/sky/.oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="agnoster"
 
-export PATH="$PATH:/home/sky/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 source $ZSH/oh-my-zsh.sh
 
