@@ -273,13 +273,13 @@ globalkeys = gears.table.join(
   -- Media Keys
   -- Available via the `playerctl` package
   awful.key({}, "XF86AudioPlay", function()
-    awful.util.spawn("playerctl play-pause", false)
+    awful.spawn.easy_async("playerctl play-pause", false)
   end),
   awful.key({}, "XF86AudioNext", function()
-    awful.util.spawn("playerctl next", false)
+    awful.spawn.easy_async("playerctl next", false)
   end),
   awful.key({}, "XF86AudioPrev", function()
-    awful.util.spawn("playerctl previous", false)
+    awful.spawn.easy_async("playerctl previous", false)
   end),
 
   -- Brightness Keys
