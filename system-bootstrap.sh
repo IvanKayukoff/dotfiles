@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PATH_OF_ZSHRC=`find . -type f -name .zshrc`
+PATH_OF_ZSHRC=`find . -maxdepth 1 -type f -name .zshrc`
 
 if [[ $PATH_OF_ZSHRC != './.zshrc' ]]
 then
