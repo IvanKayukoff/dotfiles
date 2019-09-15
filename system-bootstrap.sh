@@ -71,9 +71,16 @@ echo "set preview_images_method w3m" >> ~/.config/ranger/rc.conf
 # Installing icons
 git clone https://github.com/vinceliuice/Qogir-icon-theme.git
 cd Qogir-icon-theme
-sh Install
+sh install.sh
 cd ..
 rm -rf Qogir-icon-theme
+
+# Setting up "Time Won" font
+curl -L https://www.1001freefonts.com/d/23641/time-won.zip -o time-won.zip
+mkdir -p ~/.fonts
+unzip time-won.zip -d ~/.fonts/
+fc-cache -f -v
+rm time-won.zip
 
 # Setting the gtk theme and icons
 mkdir -p ~/.config/gtk-3.0
