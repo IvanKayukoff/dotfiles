@@ -1,0 +1,7 @@
+autodetach on
+startup_message off
+shelltitle 'zsh'
+
+# session name | time | date | load average | obligatory window
+hardstatus alwayslastline "%{b kw}%S %{r}%1` %{w}| %{g}%c %{w}| %{y}%d.%m.%Y %{w}| %{g}%l %{w}| %{-b kw}%u %-Lw%{= rW}%50> %n%f %t %{-}%+Lw%<"
+

@@ -23,4 +23,5 @@ new_safe_symlink "terminator"   "$HOME/.config/terminator"
 new_safe_symlink "awesome"      "$HOME/.config/awesome"
 new_safe_symlink ".xprofile"    "$HOME/.xprofile"
 new_safe_symlink ".Xresources"  "$HOME/.Xresources"
+new_safe_symlink ".screenrc"    "$HOME/.screenrc"
 
