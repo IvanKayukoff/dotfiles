@@ -38,10 +38,10 @@
 *.color15: #fdf6e3
 
 !! URxvt Appearance
-URxvt.font: xft:Ubuntu Mono-13,xft:Fira Code-13
-URxvt.boldFont: xft:Ubuntu Mono-13
-URxvt.italicFont: xft:Ubuntu Mono-13
-URxvt.boldItalicfont: xft:Ubuntu Mono-13
+URxvt.font: xft:Fira Code-11
+URxvt.boldFont: xft:Fira Code-11
+URxvt.italicFont: xft:Fira Code-11
+URxvt.boldItalicfont: xft:Fira Code-11
 
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
@@ -49,12 +49,12 @@ URxvt.geometry: 92x24
 URxvt.internalBorder: 4
 URxvt.cursorBlink: true
 URxvt.cursorUnderline: false
-URxvt.saveline: 2048
+URxvt.saveLines: 20480
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
 URxvt.urgentOnBell: true
 URxvt.depth: 32
-URxvt*background: rgba:0000/0000/0200/c800
+URxvt*background: rgba:1600/1600/1600/ff00
 URxvt.iso14755: false
 
 !! Common Keybinds for Navigations

@@ -11,6 +11,8 @@ alias gb="git branch"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset \
   -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
+alias i3lock="i3lock --color 161616"
+
 bindkey -v
 export KEYTIMEOUT=1 # remove the delay after hitting ESC
 
@@ -23,7 +25,7 @@ function texwatch {
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="agnoster"
+ZSH_THEME="rkj"
 
 export PATH="$PATH:$HOME/.local/bin"
 
