@@ -258,13 +258,18 @@ awful.spawn.easy_async_with_shell("xxkb &")
 awful.spawn.easy_async_with_shell("setxkbmap -layout us,ru -variant -option grp:alt_shift_toggle, terminate:ctrl_alt_bksp &")
 
 -- Enable window transparency
-awful.spawn.easy_async("compton -b")
+--awful.spawn.easy_async("compton -b")
 
 -- Start NetworkManager applet
 awful.spawn.easy_async_with_shell("nm-applet")
 
 -- {{{ Key bindings
 globalkeys = gears.table.join(
+  awful.key({ modkey, "Control" }, "i", function ()
+    awful.spawn.easy_async_with_shell("i3lock --color 161616")
+  end,
+  {description = "lock the screen", group = "client"}),
+
   -- Volume Keys
   awful.key({}, "XF86AudioRaiseVolume", function() volumecfg:up() end),
   awful.key({}, "XF86AudioLowerVolume", function() volumecfg:down() end),
