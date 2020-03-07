@@ -84,7 +84,7 @@ rm time-won.zip
 
 # Setting the gtk theme and icons
 mkdir -p ~/.config/gtk-3.0
-GTK3_SETTINGS='~/.config/gtk-3.0/settings.ini'
+GTK3_SETTINGS=~/.config/gtk-3.0/settings.ini
 echo '[Settings]'                            > $GTK3_SETTINGS
 echo 'gtk-icon-theme-name = Qogir-dark'     >> $GTK3_SETTINGS
 echo 'gtk-theme-name = Shades-of-gray-Arch' >> $GTK3_SETTINGS
