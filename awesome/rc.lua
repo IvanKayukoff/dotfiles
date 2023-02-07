@@ -270,6 +270,10 @@ globalkeys = gears.table.join(
   end,
   {description = "lock the screen", group = "client"}),
 
+  -- Screenshot to clipboard
+  awful.key({ modkey, "Shift"   }, "s", function () awful.spawn.easy_async("scrot -s -e 'xclip -selection clipboard -t image/png -i $f'", function() end) end,
+            {description = "screenshot area to clipboard"}),
+
   -- Volume Keys
   awful.key({}, "XF86AudioRaiseVolume", function() volumecfg:up() end),
   awful.key({}, "XF86AudioLowerVolume", function() volumecfg:down() end),
@@ -278,13 +282,13 @@ globalkeys = gears.table.join(
   -- Media Keys
   -- Available via the `playerctl` package
   awful.key({}, "XF86AudioPlay", function()
-    awful.spawn.easy_async("playerctl play-pause", false)
+    awful.spawn.easy_async("playerctl play-pause", function() end)
   end),
   awful.key({}, "XF86AudioNext", function()
-    awful.spawn.easy_async("playerctl next", false)
+    awful.spawn.easy_async("playerctl next", function() end)
   end),
   awful.key({}, "XF86AudioPrev", function()
-    awful.spawn.easy_async("playerctl previous", false)
+    awful.spawn.easy_async("playerctl previous", function() end)
   end),
 
   -- Brightness Keys
